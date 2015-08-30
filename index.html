@@ -8,7 +8,13 @@
     <script src="js/map.js"></script>
     <script src="js/flights.js"></script>
     <script>
+      var margin = 75,
+          width = 1400 - margin,
+          height = 600 - margin;
+      var svg;
+      var projection;
       d3.json("../data/world_countries.json", drawMap);
+      d3.csv("../data/airports-total-final.csv", drawAirports);
     </script>
   </head>
   <body>

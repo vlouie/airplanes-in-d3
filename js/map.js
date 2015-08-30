@@ -1,14 +1,4 @@
-var margin = 75,
-    width = 1400 - margin,
-    height = 600 - margin;
-var svg;
-var projection;
-
 function drawMap(geo_data){
-    var margin = 75,
-        width = 1400 - margin,
-        height = 600 - margin;
-
     svg = d3.select("body")
         .append("svg")
         .attr("width", width + margin)
